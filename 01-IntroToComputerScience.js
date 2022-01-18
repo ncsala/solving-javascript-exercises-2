@@ -2,9 +2,10 @@
 function BinarioADecimal(num) {
     // tu codigo aca
     let suma = 0;
-    
-    for(var potencia=num.length-1; potencia>=0; potencia--) {
-        lugarEnArray = (num.length-1) - potencia;
+    let lugarEnArray = 0;
+
+    for (var potencia = num.length - 1; potencia >= 0; potencia--) {
+        lugarEnArray = (num.length - 1) - potencia;
         if (num[lugarEnArray] == 1) {
             suma += Math.pow(2, potencia);
         }
@@ -12,15 +13,16 @@ function BinarioADecimal(num) {
 
     return suma;
 }
+
 console.log(BinarioADecimal('111010100111'));
 
 //------------------------------------------------------
 
 function DecimalABinario(num) {
     // tu codigo aca
-    let resto = 0; 
+    let resto = 0;
     let concatenacion = '';
-    
+
     while (num > 0) {
 
         if (num == 100) {
