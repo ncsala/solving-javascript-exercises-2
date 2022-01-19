@@ -5,3 +5,7 @@
 //     let mierda = 'que se yo';
 //     console.log(foo);
 // }
+
+let x = 'hola'
+
+x;
