@@ -9,7 +9,7 @@ var saludarHola = saludar('Hola'); // Esto devuelve una función
 
 saludarHola('Toni'); // 'Hola Toni'
 
-
+//------
 
 // Ejemplo 2
 var creaFuncion = function () {
@@ -30,3 +30,5 @@ var arr = creaFuncion();
 arr[0]() // 3 sale un 3, qué esperaban ustedes??
 arr[1]() // 3
 arr[2]() // 3
+
+
