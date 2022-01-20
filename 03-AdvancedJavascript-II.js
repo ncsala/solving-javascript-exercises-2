@@ -79,8 +79,6 @@ console.log(invocando(5)); // realizar una operacion invocando a cb, guardar el 
 console.log(invocando(6)); // paso otro argumento y realiza lo mismo que invocación anterior 
 console.log(invocando(5)); // si paso un argumento repetido, no invocar a cb de nuevo, devuelvo el argumento ya guardado
 
-
-
 // Bind
 
 var instructor = {
