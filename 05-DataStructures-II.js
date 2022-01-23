@@ -99,7 +99,7 @@ HashTable.prototype.hash = function(key) {
 };
 
 HashTable.prototype.set = function(key, value) {
-    if (typeof (key !== 'string')) throw new TypeError('Keys must be string');
+    if (typeof key !== 'string') throw new TypeError('Keys must be string');
     let dondeGuardo = this.hash(key); // se llama función hash para que devuelva dónde hay que guardarlo
 
     // el siguiente condicional es para evitar colisiones, creo objeto y luego agrego propiedades
