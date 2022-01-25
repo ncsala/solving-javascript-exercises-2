@@ -6,12 +6,12 @@
 function contar(n) {
   if(n == 0) return; // siempre tiene que haber un condicional para detener la recursividad
 
-  console.log(n); // la operacion que se quiere realizar en cada iteración
+  // console.log(n); // la operacion que se quiere realizar en cada iteración
 
   contar(n - 1); // llamar a nuestra función 
 }
 
-// contar(10);
+contar(10);
 //----
 
 // ejemplo 2
@@ -49,5 +49,5 @@ function recorrido(node) {
   recorrido(node.right);
 }
 
-recorrido(c);
+// recorrido(c);
 //----
