@@ -47,14 +47,6 @@ BinarySearchTree.prototype.contains = function (value) {
   return false;
 };
 
-// otra forma de escribir el contains
-/* BinarySearchTree.prototype.contains = function (value) {
-  return value === this.value
-    ? true
-    : value < this.value
-      ? this.left?.contains(value)
-      : this.right?.contains(value) || false;
-}; */
 
 BinarySearchTree.prototype.depthFirstForEach = function (cb, order) {
   if (order === 'in-order' || order === undefined) {
@@ -88,6 +80,7 @@ BinarySearchTree.prototype.depthFirstForEach = function (cb, order) {
   }
 };
 
+
 BinarySearchTree.prototype.breadthFirstForEach = function (cb, nodes) {
   if (nodes === undefined) nodes = [];
 
@@ -106,6 +99,7 @@ BinarySearchTree.prototype.breadthFirstForEach = function (cb, nodes) {
   }
 };
 
+
 BinarySearchTree.prototype.size = function () {
   let result = 1;
   result += this.left ? this.left.size() : 0;
@@ -113,14 +107,3 @@ BinarySearchTree.prototype.size = function () {
   console.log(result);
   return result;
 };
-
-const miArbol = new BinarySearchTree(5);
-miArbol.insert(2);
-miArbol.insert(-2);
-miArbol.insert(-5);
-miArbol.insert(7);
-miArbol.insert(9);
-miArbol.insert(3);
-
-console.log(miArbol);
-

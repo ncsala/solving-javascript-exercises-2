@@ -16,6 +16,8 @@ function List() {
 }
 
 // Ej. List.add('Nicolas'); 
+// Ej. List.add('Martin'); 
+
 List.prototype.add = function (data) {
     const node = new Node(data); // se crea una instancia del nodo. // Ej. {data: 'Nicolas', next: null}
     let current = this.head; // se inicializa current con lo que tenga en la cabecera // Ej. Null
@@ -24,9 +26,9 @@ List.prototype.add = function (data) {
     // recordar que antes inicializamos current con el valor de head
     if (current === null) { // otra forma es: if(!current) 
         // Agregamos el primer nodo
-        this.head = node; // ahora el nodo que creamos va a ser la head // ej. 'Nicolas'
+        this.head = node; // ahora el nodo que creamos va a estar apuntado por la head // ej. 'Nicolas'
         this._length++; // aumentamos el largo de la lista
-        return node;
+        return node; // retorna el nodo y sale de la funcion
     }
 
     // SI LA LISTA NO ESTÁ VACÍA, se recorre hasta encontrar el último nodo
@@ -34,7 +36,7 @@ List.prototype.add = function (data) {
         current = current.next; // vamos actualizando current
     }
 
-    current.next = node; // agrega un nodo a lo ultimo, o sea agrega al nodo que creamos al principio 'Nicolas'
+    current.next = node; // agrega un nodo a lo ultimo, o sea agrega al nodo que creamos al principio 'Martin'
     this._length++;
     return node
 }
