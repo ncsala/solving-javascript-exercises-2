@@ -1,4 +1,4 @@
-// First In First Out
+// FIFO - First In First Out
 
 let queue = [];
 console.log();

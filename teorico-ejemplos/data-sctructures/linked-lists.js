@@ -42,11 +42,8 @@ List.prototype.add = function (data) {
 }
 
 const miLista = new List();
-miLista;
 miLista.add('Nicolas');
-miLista;
 miLista.add('Agustina');
-miLista;
 miLista.add('Tincho');
 console.log(miLista.head);
 

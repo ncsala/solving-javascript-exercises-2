@@ -11,8 +11,7 @@ function nFactorial(n) {
   if (n >= 0 && n <= 1) return 1;
   return n * nFactorial(n - 1); 
 }
-
-console.log(nFactorial(14));
+// console.log(nFactorial(14));
 
 function nFibonacci(n) {
   // Secuencia de Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,…
@@ -27,7 +26,7 @@ function nFibonacci(n) {
     return nFibonacci(n-1) + nFibonacci(n - 2);
   }
 }
-console.log(nFibonacci(6));
+// console.log(nFibonacci(6));
 
 
 // Para esta parte no es necesario utilizar recursión.
@@ -93,7 +92,7 @@ const cola1 = new Queue();
 cola1.enqueue('esto es una prueba');
 cola1.enqueue('esta es la segunda prueba');
 console.log(cola1);
-cola1.dequeue(1);
+cola1.dequeue();
 console.log(cola1);
 console.log(cola1.size());
 
