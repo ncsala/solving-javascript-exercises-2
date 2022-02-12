@@ -1,3 +1,4 @@
+//----------------------------------------------------------------
 function factorear(num) {
   // Factorear el número recibido como parámetro y devolver en un array
   // los factores por los cuales se va dividiendo a dicho número (De menor a mayor)
@@ -19,7 +20,9 @@ function factorear(num) {
 
   return arrayResultado;
 }
+//----------------------------------------------------------------
 
+//----------------------------------------------------------------
 function bubbleSort(ar) {
   // Implementar el método conocido como bubbleSort para ordenar de menor a mayor
   // el array recibido como parámetro
@@ -41,7 +44,10 @@ function bubbleSort(ar) {
 
   return ar;
 }
+//----------------------------------------------------------------
 
+
+//----------------------------------------------------------------
 function insertionSort(ar) {
   // Implementar el método conocido como insertionSort para ordenar de menor a mayor
   // el array recibido como parámetro utilizando arreglos
@@ -60,9 +66,11 @@ function insertionSort(ar) {
 
   return ar;
 }
+//----------------------------------------------------------------
 
 // console.log(insertionSort([24, 10, -55, 23, -3000, -2999, -3001 ,22,21,20, 2, 1543]));
 
+//----------------------------------------------------------------
 function selectionSort(ar) {
   // Implementar el método conocido como selectionSort para ordenar de menor a mayor
   // el array recibido como parámetro utilizando dos arreglos
@@ -87,9 +95,11 @@ function selectionSort(ar) {
 
   return ar;
 }
+//----------------------------------------------------------------
 
 console.log(selectionSort([24, 10, -55, 23, -3000, -2999, -3001, 22, 21, 20, 2, 1543]));
 
+//----------------------------------------------------------------
 function miPropioAlgoritmoDeBusqueda(ar) {
   // Implementar el método conocido como selectionSort para ordenar de menor a mayor
   // el array recibido como parámetro utilizando dos arreglos
@@ -118,3 +128,5 @@ function miPropioAlgoritmoDeBusqueda(ar) {
 
   return ar;
 }
+//----------------------------------------------------------------
+
