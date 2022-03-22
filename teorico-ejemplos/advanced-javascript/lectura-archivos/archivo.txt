@@ -1,0 +1,3 @@
+Hola este es un texto 
+aleatorio para probar la 
+lectura de texto con node
