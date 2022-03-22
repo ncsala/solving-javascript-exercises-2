@@ -1,3 +1,4 @@
 Hola este es un texto 
 aleatorio para probar la 
-lectura de texto con node
+lectura de texto con Javascript - node.
+Javascript es lo mejor.
